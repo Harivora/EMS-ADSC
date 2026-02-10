@@ -7,7 +7,7 @@ export const runtime = 'edge';
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
-    
+
     // Get parameters from URL
     const title = searchParams.get('title') || 'Event Management System';
     const subtitle = searchParams.get('subtitle') || 'Atmiya University';
@@ -37,7 +37,7 @@ export async function GET(request: NextRequest) {
               status: true,
             }
           });
-          
+
           if (event) {
             const formatDate = (date: Date) => {
               return new Intl.DateTimeFormat('en-US', {
@@ -46,7 +46,7 @@ export async function GET(request: NextRequest) {
                 day: 'numeric'
               }).format(date);
             };
-            
+
             dynamicData = {
               title: event.name,
               subtitle: `Organized by ${event.organizer_name}`,
@@ -72,7 +72,7 @@ export async function GET(request: NextRequest) {
               team_size_limit: true,
             }
           });
-          
+
           if (hackathon) {
             const formatDate = (date: Date) => {
               return new Intl.DateTimeFormat('en-US', {
@@ -81,10 +81,10 @@ export async function GET(request: NextRequest) {
                 day: 'numeric'
               }).format(date);
             };
-            
+
             const startDate = formatDate(hackathon.start_date);
             const endDate = formatDate(hackathon.end_date);
-            
+
             dynamicData = {
               title: hackathon.name,
               subtitle: `Organized by ${hackathon.organizer_name}`,
@@ -95,6 +95,8 @@ export async function GET(request: NextRequest) {
             };
           }
         }
+      } catch (e) {
+        console.error('Error fetching dynamic data:', e);
       }
     }
 
@@ -191,7 +193,7 @@ export async function GET(request: NextRequest) {
               background: 'radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%)',
             }}
           />
-          
+
           {/* Logo/Icon */}
           <div
             style={{
