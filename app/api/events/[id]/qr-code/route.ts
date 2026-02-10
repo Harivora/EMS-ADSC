@@ -101,10 +101,10 @@ export async function POST(
 
 export async function GET(
     request: NextRequest,
-    { params }: { params: Promise<{ eventId: string }> }
+    { params }: { params: Promise<{ id: string }> }
 ) {
     try {
-        const { eventId } = await params;
+        const { id } = await params;
         const supabase = await createClient();
         const { data: { user }, error: authError } = await supabase.auth.getUser();
 
@@ -114,7 +114,7 @@ export async function GET(
 
         // Get the event with QR code
         const event = await prisma.event.findUnique({
-            where: { id: eventId },
+            where: { id: id },
             select: {
                 id: true,
                 name: true,
