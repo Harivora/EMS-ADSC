@@ -9,7 +9,12 @@ export async function signInWithGoogleAction() {
 
   const headersList = await headers();
   const origin = headersList.get("origin") || process.env.BASE_URL;
-  const redirectTo = `${origin}/auth/callback?next=/onboarding`;
+
+  // Force production URL if not in development
+  const isDev = process.env.NODE_ENV === "development";
+  const finalOrigin = isDev ? origin : "https://adsc-atmiya.vercel.app";
+
+  const redirectTo = `${finalOrigin}/auth/callback?next=/onboarding`;
   console.log("Google Login RedirectTo:", redirectTo);
 
   const { data, error } = await supabase.auth.signInWithOAuth({
