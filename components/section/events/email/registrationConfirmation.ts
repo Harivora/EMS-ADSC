@@ -135,7 +135,7 @@ export const template = `<!DOCTYPE html>
 
       <br/>
 
-      <a href="https://events.adsc-atmiya.in{{USER_ROLE}}/account" class="button">View My QR Code</a>
+      <a href="https://adsc-atmiya.vercel.app{{USER_ROLE}}/account" class="button">View My QR Code</a>
       <br/>
 
       <div class="notice">

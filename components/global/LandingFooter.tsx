@@ -25,7 +25,7 @@ export function LandingFooter() {
   };
 
   const socialLinks = [
-    { name: "Website", icon: Globe, href: "https://events.adsc-atmiya.in" },
+    { name: "Website", icon: Globe, href: "https://adsc-atmiya.vercel.app" },
     { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/adsc.atmiya" },
     { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/adsc-atmiya-university" },
   ];

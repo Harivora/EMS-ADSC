@@ -157,7 +157,7 @@ export const template = `<!DOCTYPE html>
         </ul>
       </div>
 
-      <a href="https://events.adsc-atmiya.in/events/{{EVENT_ID}}" class="button">Register Now</a>
+      <a href="https://adsc-atmiya.vercel.app/events/{{EVENT_ID}}" class="button">Register Now</a>
 
       <div class="notice">
         <p><strong>Note:</strong> {{EVENT_NOTE}}</p>
