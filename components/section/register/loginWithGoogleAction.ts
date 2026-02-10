@@ -9,6 +9,8 @@ export async function signInWithGoogleAction() {
 
   const headersList = await headers();
   const origin = headersList.get("origin") || process.env.BASE_URL;
+  const redirectTo = `${origin}/auth/callback?next=/onboarding`;
+  console.log("Google Login RedirectTo:", redirectTo);
 
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
@@ -18,7 +20,7 @@ export async function signInWithGoogleAction() {
         prompt: 'consent'
       },
       scopes: 'openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email',
-      redirectTo: `${origin}/auth/callback?next=/onboarding`,
+      redirectTo: redirectTo,
     },
   });
 
