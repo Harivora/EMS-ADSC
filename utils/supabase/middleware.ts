@@ -43,8 +43,8 @@ export async function updateSession(request: NextRequest) {
     {
       cookies: {
         getAll: () => request.cookies.getAll(),
-        setAll: (cookiesToSet) => {
-          cookiesToSet.forEach(({ name, value, options }) =>
+        setAll: (cookiesToSet: { name: string; value: string; options: any }[]) => {
+          cookiesToSet.forEach(({ name, value, options }: { name: string; value: string; options: any }) =>
             response.cookies.set(name, value, options)
           );
         },

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/utils/supabase/server';
 import { QRCodeService, QRCodeData } from '@/lib/qr-code';
 import { prisma } from "@/lib/prisma";
+import { PrismaClient } from '@prisma/client';
 export async function POST(request: NextRequest) {
     try {
         const supabase = await createClient();
@@ -46,7 +47,7 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        let result;
+        let result: any;
 
         if (parsedData.type === 'user') {
             // Handle user QR code scan
