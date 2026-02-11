@@ -8,7 +8,7 @@ export default function TermsOfServicePage() {
       <main className="max-w-3xl mx-auto px-4 py-12 text-base text-foreground">
         <h1 className="text-3xl font-bold mb-6">Terms of Service</h1>
         <p className="mb-4">
-          Welcome to ADSC. These Terms of Service ("Terms") govern your access to and use of ADSC's services, including our website at <a href="https://adsc-atmiya.vercel.app" className="underline hover:text-primary transition-colors">https://adsc-atmiya.vercel.app</a> (the "Service"), and any information, text, graphics, photos or other materials uploaded, downloaded or appearing on the Service (collectively referred to as "Content"). Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. By accessing or using the Service you agree to be bound by these Terms.
+          Welcome to ADSC. These Terms of Service ("Terms") govern your access to and use of ADSC's services, including our website at <a href="https://ems-adsc.vercel.app" className="underline hover:text-primary transition-colors">https://ems-adsc.vercel.app</a> (the "Service"), and any information, text, graphics, photos or other materials uploaded, downloaded or appearing on the Service (collectively referred to as "Content"). Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. By accessing or using the Service you agree to be bound by these Terms.
         </p>
 
         <h2 className="text-xl font-semibold mt-8 mb-2">1. Basic Terms</h2>
@@ -87,7 +87,7 @@ export default function TermsOfServicePage() {
 
         <h2 className="text-xl font-semibold mt-8 mb-2">10. Changes to these Terms</h2>
         <p className="mb-4">
-          We may revise these Terms from time to time. The most current version will always be at <a href="https://adsc-atmiya.vercel.app/legal/terms" className="underline hover:text-primary transition-colors">https://adsc-atmiya.vercel.app/legal/terms</a>. If the revision, in our sole discretion, is material we will notify you via an e-mail to the email associated with your account. By continuing to access or use the Service after those revisions become effective, you agree to be bound by the revised Terms.
+          We may revise these Terms from time to time. The most current version will always be at <a href="https://ems-adsc.vercel.app/legal/terms" className="underline hover:text-primary transition-colors">https://ems-adsc.vercel.app/legal/terms</a>. If the revision, in our sole discretion, is material we will notify you via an e-mail to the email associated with your account. By continuing to access or use the Service after those revisions become effective, you agree to be bound by the revised Terms.
         </p>
 
         <h2 className="text-xl font-semibold mt-8 mb-2">11. Miscellaneous</h2>

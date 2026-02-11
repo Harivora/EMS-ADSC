@@ -8,7 +8,7 @@ export default function CookiesPolicyPage() {
       <main className="max-w-3xl mx-auto px-4 py-12 text-base text-foreground">
         <h1 className="text-3xl font-bold mb-6">Cookies Policy</h1>
         <p className="mb-4">
-          This Cookies Policy explains how ADSC ("we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our website at <a href="https://adsc-atmiya.vercel.app" className="underline hover:text-primary transition-colors">https://adsc-atmiya.vercel.app</a> ("Website"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+          This Cookies Policy explains how ADSC ("we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our website at <a href="https://ems-adsc.vercel.app" className="underline hover:text-primary transition-colors">https://ems-adsc.vercel.app</a> ("Website"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.
         </p>
         <p className="mb-4">This policy is effective as of 1 June 2023 and was last updated on 1 June 2023.</p>
 

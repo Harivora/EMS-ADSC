@@ -17,8 +17,8 @@ export function generateMetadata({
   image = '/images/og-thumbnail.png',
   url = '/'
 }: GenerateMetadataProps = {}): Metadata {
-  const baseUrl = process.env.BASE_URL?.replace(/\/$/, '') || 'https://adsc-atmiya.vercel.app';
-  
+  const baseUrl = process.env.BASE_URL?.replace(/\/$/, '') || 'https://ems-adsc.vercel.app';
+
   return {
     title,
     description,
@@ -35,36 +35,36 @@ export function generateMetadata({
     alternates: {
       canonical: url,
     },
-         openGraph: {
-       type: 'website',
-       locale: 'en_US',
-       url: `${baseUrl}${url}`,
-       siteName: 'EMS - Atmiya University',
-       title,
-       description,
-       images: [
-         {
-           url: image,
-           width: 1200,
-           height: 630,
-           alt: title,
-         },
-         {
-           url: '/images/og-thumbnail-square.png',
-           width: 600,
-           height: 600,
-           alt: title,
-         },
-       ],
-     },
-     twitter: {
-       card: 'summary_large_image',
-       site: '@atmiyauniversity',
-       creator: '@atmiyauniversity',
-       title,
-       description,
-       images: [image],
-     },
+    openGraph: {
+      type: 'website',
+      locale: 'en_US',
+      url: `${baseUrl}${url}`,
+      siteName: 'EMS - Atmiya University',
+      title,
+      description,
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+        {
+          url: '/images/og-thumbnail-square.png',
+          width: 600,
+          height: 600,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@atmiyauniversity',
+      creator: '@atmiyauniversity',
+      title,
+      description,
+      images: [image],
+    },
     robots: {
       index: true,
       follow: true,
@@ -86,14 +86,14 @@ export const metadata = {
     description: "A comprehensive platform to manage events, registrations, and tickets for Atmiya University. Streamline your event management with our modern EMS solution.",
     url: '/',
   }),
-  
+
   events: generateMetadata({
     title: "Events - EMS Atmiya University",
     description: "Discover and register for exciting events at Atmiya University. From academic seminars to cultural festivals, find your next opportunity.",
     keywords: ["events", "university events", "event registration", "academic events", "cultural events"],
     url: '/events',
   }),
-  
+
   hackathons: generateMetadata({
     title: "Hackathons - EMS Atmiya University",
     description: "Join innovative hackathons and coding competitions at Atmiya University. Build, create, and compete with fellow students.",
@@ -101,14 +101,14 @@ export const metadata = {
     type: 'hackathon',
     url: '/hackathons',
   }),
-  
+
   login: generateMetadata({
     title: "Login - EMS Atmiya University",
     description: "Access your EMS account to manage events, registrations, and more.",
     keywords: ["login", "authentication", "user account", "EMS login"],
     url: '/login',
   }),
-  
+
   register: generateMetadata({
     title: "Register - EMS Atmiya University",
     description: "Create your EMS account to start managing and participating in events at Atmiya University.",
@@ -128,7 +128,7 @@ export function generateEventMetadata(event: {
 }) {
   // Use the unified API with eventId for dynamic data fetching
   const ogImageUrl = event.image || `/api/og?eventId=${event.id}`;
-  
+
   return generateMetadata({
     title: `${event.title} - EMS Atmiya University`,
     description: event.description,
@@ -150,7 +150,7 @@ export function generateHackathonMetadata(hackathon: {
 }) {
   // Use the unified API with hackathonId for dynamic data fetching
   const ogImageUrl = hackathon.image || `/api/og?hackathonId=${hackathon.id}`;
-  
+
   return generateMetadata({
     title: `${hackathon.title} - EMS Atmiya University`,
     description: hackathon.description,

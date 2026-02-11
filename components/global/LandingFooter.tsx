@@ -25,7 +25,7 @@ export function LandingFooter() {
   };
 
   const socialLinks = [
-    { name: "Website", icon: Globe, href: "https://adsc-atmiya.vercel.app" },
+    { name: "Website", icon: Globe, href: "https://ems-adsc.vercel.app" },
     { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/adsc.atmiya" },
     { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/adsc-atmiya-university" },
   ];
@@ -126,7 +126,7 @@ export function LandingFooter() {
         </div>  */}
         <div className="border-t border-border mt-8 pt-8 flex flex-col lg:flex-row justify-between items-center">
           <div className="text-muted-foreground text-sm mb-4 lg:mb-0">
-            © {currentYear} EMS. All rights reserved. Made with <span role="img" aria-label="love">❤️</span> by <a href="https://adsc-atmiya.in" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">ADSC</a>.
+            © {currentYear} EMS. All rights reserved. Made with <span role="img" aria-label="love">❤️</span> by <a href="https://ems-adsc.vercel.app" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">ADSC</a>.
           </div>
           <div className="flex space-x-4">
             {socialLinks.map((social) => (

@@ -8,7 +8,7 @@ export default function PrivacyPage() {
       <main className="max-w-3xl mx-auto px-4 py-12 text-lg text-foreground">
         <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
         <p className="mb-4">
-          Your privacy is important to us. It is ADSC's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, <a href="https://adsc-atmiya.vercel.app" className="underline hover:text-primary transition-colors">https://adsc-atmiya.vercel.app</a>, and other sites we own and operate.
+          Your privacy is important to us. It is ADSC's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, <a href="https://ems-adsc.vercel.app" className="underline hover:text-primary transition-colors">https://ems-adsc.vercel.app</a>, and other sites we own and operate.
         </p>
         <p className="mb-4">This policy is effective as of 1 June 2023 and was last updated on 1 June 2023.</p>
 

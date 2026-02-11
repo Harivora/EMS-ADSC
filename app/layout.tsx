@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://adsc-atmiya.vercel.app'),
+  metadataBase: new URL('https://ems-adsc.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://adsc-atmiya.vercel.app',
+    url: 'https://ems-adsc.vercel.app',
     siteName: 'EMS - Atmiya University',
     title: 'Event Management System - Atmiya University',
     description: 'A comprehensive platform to manage events, registrations, and tickets for Atmiya University. Streamline your event management with our modern EMS solution.',
